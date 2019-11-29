@@ -14,12 +14,12 @@ import java.util.List;
  * -XX:SurvivorRatio=8
  */
 public class Xmx10M {
-    static class OOMObject{
+    static class OOMObject {
 
     }
 
     public static void main(String[] args) {
-        List<OOMObject> list = new ArrayList<>();
+        List<OOMObject> list = new ArrayList<OOMObject>();
         while (true) {
             list.add(new OOMObject());
         }
